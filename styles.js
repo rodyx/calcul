@@ -1,0 +1,66 @@
+import { StyleSheet } from 'react-native';
+
+export const styles = StyleSheet.create({
+    appWrapper: {
+      flex: 1,
+      backgroundColor: '#fff',
+      alignItems: 'center',
+      justifyContent: 'center',
+      color: 'green',
+    },
+    displayWrapper: {
+      paddingHorizontal: 25,
+      height: '30%',
+      width: '100%',
+      justifyContent: 'flex-end',
+    },
+    displayText: {
+      marginLeft: 'auto',
+      marginRight: 0,
+      fontSize: 55,
+    },
+    buttonsList: {
+      paddingVertical: 20,
+      paddingHorizontal: 15,
+      width: '100%',
+      flexDirection: 'row',
+      flexWrap: 'wrap',
+      justifyContent: 'flex-start',
+      alignItems: 'flex-start',
+      backgroundColor: 'white'
+    },
+    buttonNum: {
+      width: 90,
+      height: 90,
+      alignItems: 'center',
+      justifyContent: 'center',
+      margin: 3,
+      borderRadius: 50,
+      borderWidth: 0.5,
+      borderColor: 'white',
+      shadowColor: '#000',
+      shadowOpacity: 0.2,
+      shadowRadius: 1,
+    },
+    buttonSpec: {
+      width: 90,
+      height: 90,
+      alignItems: 'center',
+      justifyContent: 'center',
+      margin: 3,
+      borderRadius: 50,
+      borderWidth: 0.5,
+      backgroundColor: '#f4a9a9',
+      borderColor: 'white',
+      shadowColor: '#000',
+      shadowOpacity: 0.2,
+      shadowRadius: 1,
+    },
+    buttonText: {
+      fontSize: 35,
+      color: '#000',
+      shadowColor: 'transparent',
+      shadowOpacity: 0,
+      shadowRadius: 0,
+    },
+  });
