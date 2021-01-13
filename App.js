@@ -55,7 +55,7 @@ export default function App() {
       </View>
       <View style={styles.buttonsList}>
 
-        {arr.map(item => {
+        {arr.map((item, ind) => {
           return intArr.includes(item) ? (
             <TouchableOpacity
               onPress={() => addNum(item)}
@@ -68,10 +68,10 @@ export default function App() {
           ) : (
               <TouchableOpacity
                 onPress={() => addOperand(item)}
-                style={styles.buttonSpec}
+                style={ind === 0 ? styles.buttonSpecC : styles.buttonSpec}
                 key={item}
               >
-                <Text style={styles.buttonText}>{item}</Text>
+                <Text style={ind === 0 ? styles.buttonTextC : styles.buttonText}>{item}</Text>
 
               </TouchableOpacity>
             )
